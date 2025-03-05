@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="331dp"
+        android:layout_height="47dp"
+        android:text="Connect to other Bank Accounts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="62dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+    <ImageButton
+        android:id="@+id/chaseButton"
+        android:layout_width="169dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/chase" />
+
+    <ImageButton
+        android:id="@+id/discoverButton"
+        android:layout_width="168dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/americaButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chaseButton"
+        app:srcCompat="@drawable/discover" />
+
+    <ImageButton
+        android:id="@+id/americaButton"
+        android:layout_width="186dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/discoverButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bankofamerica" />
+
+    <ImageButton
+        android:id="@+id/usButton"
+        android:layout_width="184dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="43dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chaseButton"
+        app:layout_constraintTop_toBottomOf="@+id/americaButton"
+        app:srcCompat="@drawable/usbank" />
+
+    <ImageButton
+        android:id="@+id/pncButton"
+        android:layout_width="171dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/captialButton"
+        app:layout_constraintEnd_toStartOf="@+id/wellsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discoverButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pnc" />
+
+    <ImageButton
+        android:id="@+id/wellsButton"
+        android:layout_width="177dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="38dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pncButton"
+        app:layout_constraintTop_toBottomOf="@+id/usButton"
+        app:srcCompat="@drawable/wells" />
+
+    <ImageButton
+        android:id="@+id/captialButton"
+        android:layout_width="184dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="130dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wellsButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/capitalone" />
+
+    <ImageButton
+        android:id="@+id/citiButton"
+        android:layout_width="146dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="130dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/captialButton"
+        app:layout_constraintTop_toBottomOf="@+id/wellsButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/citi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
